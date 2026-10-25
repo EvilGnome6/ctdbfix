@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D66CDD9EF9744C6A986FE0B4 /* CtdbFixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA04B14D4284751A39578E2 /* CtdbFixApp.swift */; };
+		787B11AFF4844E08A4DD6331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BC13C3FA6462C9E31A088 /* ContentView.swift */; };
+		7862FAC8F4714471BF7885B8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B935E3A844D278754A7B3 /* Models.swift */; };
+		9548FCF8A554469BB5004F65 /* EngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0FBD686D04B9F96E847ED /* EngineClient.swift */; };
+		D24C3D1937EF49AAAB6371A5 /* ctdbfix-engine in Resources */ = {isa = PBXBuildFile; fileRef = 06B4E842A2864A39B78EB356 /* ctdbfix-engine */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42F8D70DD4044E03A149B9CA /* CtdbFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CtdbFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA04B14D4284751A39578E2 /* CtdbFixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CtdbFixApp.swift; sourceTree = "<group>"; };
+		FC2BC13C3FA6462C9E31A088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC8B935E3A844D278754A7B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D8B0FBD686D04B9F96E847ED /* EngineClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineClient.swift; sourceTree = "<group>"; };
+		EFA88150EC7D4768942E57D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE57FBF048849CEB19D590A /* CtdbFix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CtdbFix.entitlements; sourceTree = "<group>"; };
+		06B4E842A2864A39B78EB356 /* ctdbfix-engine */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ctdbfix-engine"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40537602016A41D89BD7DC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C34444136355441A9E7B826F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				000E5B5845DD4EC68809CAB9 /* CtdbFix */,
+				778B277B1B0F4352B2528232 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000E5B5845DD4EC68809CAB9 /* CtdbFix */ = {
+			isa = PBXGroup;
+			children = (
+				8DA04B14D4284751A39578E2 /* CtdbFixApp.swift */,
+				FC2BC13C3FA6462C9E31A088 /* ContentView.swift */,
+				EC8B935E3A844D278754A7B3 /* Models.swift */,
+				D8B0FBD686D04B9F96E847ED /* EngineClient.swift */,
+				EFA88150EC7D4768942E57D7 /* Info.plist */,
+				6FE57FBF048849CEB19D590A /* CtdbFix.entitlements */,
+				C6675481445F40969F531D02 /* Resources */,
+			);
+			path = CtdbFix;
+			sourceTree = "<group>";
+		};
+		C6675481445F40969F531D02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06B4E842A2864A39B78EB356 /* ctdbfix-engine */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		778B277B1B0F4352B2528232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F8D70DD4044E03A149B9CA /* CtdbFix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D201D188E29E44BBAD2CFC2D /* CtdbFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73850ED8833846ED9573246A /* Build configuration list for PBXNativeTarget "CtdbFix" */;
+			buildPhases = (
+				4C8C0F7338A04EBD94BD44C7 /* Sources */,
+				40537602016A41D89BD7DC56 /* Frameworks */,
+				8BBF6D6A92944418B6D407A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CtdbFix;
+			productName = CtdbFix;
+			productReference = 42F8D70DD4044E03A149B9CA /* CtdbFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC18E362BA41422AA21A7D1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 656C9D1F619648A58DEB82D3 /* Build configuration list for PBXProject "CtdbFix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C34444136355441A9E7B826F /* Root */;
+			productRefGroup = 778B277B1B0F4352B2528232 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D201D188E29E44BBAD2CFC2D /* CtdbFix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BBF6D6A92944418B6D407A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24C3D1937EF49AAAB6371A5 /* ctdbfix-engine in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C8C0F7338A04EBD94BD44C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66CDD9EF9744C6A986FE0B4 /* CtdbFixApp.swift in Sources */,
+				787B11AFF4844E08A4DD6331 /* ContentView.swift in Sources */,
+				7862FAC8F4714471BF7885B8 /* Models.swift in Sources */,
+				9548FCF8A554469BB5004F65 /* EngineClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		673A8582568340B0851D1769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCA1DF10BE0645D2AFA681D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FF7C0E4926054085A5E9B304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CtdbFix/CtdbFix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CtdbFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.ctdbfix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		334DCADEC8C248D4BE9BEF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CtdbFix/CtdbFix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CtdbFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.ctdbfix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656C9D1F619648A58DEB82D3 /* Build configuration list for PBXProject "CtdbFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673A8582568340B0851D1769 /* Debug */,
+				FCA1DF10BE0645D2AFA681D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73850ED8833846ED9573246A /* Build configuration list for PBXNativeTarget "CtdbFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7C0E4926054085A5E9B304 /* Debug */,
+				334DCADEC8C248D4BE9BEF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC18E362BA41422AA21A7D1E /* Project object */;
+}

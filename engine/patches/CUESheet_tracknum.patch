@@ -1,0 +1,13 @@
+--- external/cuetools.net/CUETools.Processor/CUESheet.cs
++++ external/cuetools.net/CUETools.Processor/CUESheet.cs
+@@ -1264,9 +1264,7 @@
+                         else if (command == "TRACK")
+                         {
+                             isAudioTrack = line.Params[2].ToUpper() == "AUDIO";
+-                            trackNumber = int.Parse(line.Params[1]);
+-                            if (trackNumber != _toc.TrackCount + 1)
+-                                throw new Exception("Invalid track number");
++                            trackNumber += 1;
+                             // Disabled this check: fails on Headcandy test image
+                             //if (isAudioTrack && _sourcePaths.Count == 0)
+                             //    throw new Exception("No FILE seen before TRACK");

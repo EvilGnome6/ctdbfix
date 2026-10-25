@@ -1,0 +1,60 @@
+--- external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/TaglibSharp.csproj
++++ external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/TaglibSharp.csproj	2026-01-18 19:53:44.277075944 +0900
+@@ -1,6 +1,8 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
++    <ReleaseVersion>2.3.0.0</ReleaseVersion> <!-- From Directory.Build.props -->
++    <LibTargetFrameworks>net47;netstandard2.0</LibTargetFrameworks> <!-- From Directory.Build.props -->
+     <TargetFrameworks>$(LibTargetFrameworks)</TargetFrameworks>
+     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\TaglibSharp.xml</DocumentationFile>
+     <AssemblyName>TagLibSharp</AssemblyName>
+--- external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/Tag.cs
++++ external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/Tag.cs	2026-01-18 20:03:16.043653365 +0900
+@@ -1631,5 +1631,29 @@
+ 
+ 			return true;
+ 		}
++
++		/// <summary>
++		///    Gets and sets the catalog number of the media.
++		/// </summary>
++		public virtual string CatalogNo {
++			get { return null; }
++			set { }
++		}
++
++		/// <summary>
++		///    Gets and sets the disc subtitle of the media.
++		/// </summary>
++		public virtual string DiscSubtitle {
++			get { return null; }
++			set { }
++		}
++
++		/// <summary>
++		///    Gets and sets the release date of the media.
++		/// </summary>
++		public virtual string ReleaseDate {
++			get { return null; }
++			set { }
++		}
+ 	}
+ }
+--- external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/Properties.cs
++++ external/cuetools.net/ThirdParty/taglib-sharp/src/TaglibSharp/Properties.cs	2026-01-18 20:03:18.453793500 +0900
+@@ -452,5 +452,14 @@
+ 		}
+ 
+ 		#endregion
++
++		/// <summary>
++		///    Gets the number of audio samples in the media represented by the current instance.
++		/// </summary>
++		public long AudioSampleCount {
++			get {
++				return (long)(Duration.TotalSeconds * AudioSampleRate);
++			}
++		}
+ 	}
+ }

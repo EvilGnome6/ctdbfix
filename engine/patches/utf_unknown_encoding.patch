@@ -1,0 +1,43 @@
+--- external/cuetools.net/CUETools.Processor/CUESheet.cs.orig
++++ external/cuetools.net/CUETools.Processor/CUESheet.cs
+@@ -17,6 +17,7 @@
+ using CUETools.Compression;
+ using CUETools.Ripper;
+ using Freedb;
++using UtfUnknown;
+ 
+ namespace CUETools.Processor
+ {
+@@ -1920,6 +1921,11 @@
+                 return Encoding.Default;
+             }
+         }
++        public static Encoding DetectEncoding(string path)
++        {
++            var result = CharsetDetector.DetectFromFile(path);
++            return result.Detected?.Encoding;
++        }
+ 
+         public static StreamReader StreamReader_UTF_ANSI(string path)
+         {
+@@ -1937,8 +1943,8 @@
+             }
+             catch (DecoderFallbackException)
+             {
+-                // Use Encoding.Default (typically ANSI)
+-                var sr = new StreamReader(path, Encoding.Default);
++                var detectedEncoding = DetectEncoding(path) ?? Encoding.Default;
++                var sr = new StreamReader(path, detectedEncoding);
+                 sr.ReadToEnd();
+                 sr.BaseStream.Position = 0;
+                 sr.DiscardBufferedData();
+--- external/cuetools.net/CUETools.Processor/CUETools.Processor.csproj.orig
++++ external/cuetools.net/CUETools.Processor/CUETools.Processor.csproj
+@@ -24,6 +24,7 @@
+ 
+   <ItemGroup>
+     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
++    <PackageReference Include="UTF.Unknown" Version="2.6.0" />
+   </ItemGroup>
+ 
+   <ItemGroup>

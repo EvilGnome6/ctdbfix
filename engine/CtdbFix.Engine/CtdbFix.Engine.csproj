@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>ctdbfix-engine</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>CtdbFix.Engine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\external\cuetools.net\CUETools.Parity\CUETools.Parity.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.CTDB\CUETools.CTDB.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.Codecs\CUETools.Codecs.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.AccurateRip\CUETools.AccurateRip.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.CDImage\CUETools.CDImage.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.Processor\CUETools.Processor.csproj" />
+    <ProjectReference Include="..\external\cuetools.net\CUETools.Codecs.Flake\CUETools.Codecs.Flake.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

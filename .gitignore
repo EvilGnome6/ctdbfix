@@ -1,0 +1,28 @@
+# Build
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+
+# Vendored (fetched by engine/setup.sh)
+engine/external/
+
+# macOS / Xcode
+.DS_Store
+**/.DS_Store
+xcuserdata/
+DerivedData/
+*.xcuserstate
+app/build/
+*.app/
+testdata/
+
+# Published / bundled engine binaries (regenerate via scripts/sync-engine.sh)
+engine/dist/
+app/CtdbFix/Resources/engine/
+app/CtdbFix/Resources/ctdbfix-engine
+
+# Patch rejects
+*.rej
+*.orig
